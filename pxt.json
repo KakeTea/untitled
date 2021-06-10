@@ -7,7 +7,9 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
     ],
     "targetVersions": {
         "target": "1.4.44",
@@ -16,7 +18,7 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "palette": [
         "#000000",
         "#ffffff",
