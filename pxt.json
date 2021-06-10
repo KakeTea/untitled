@@ -7,11 +7,7 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md",
-        "assets.json"
-    ],
-    "testFiles": [
-        "test.ts"
+        "README.md"
     ],
     "targetVersions": {
         "target": "1.4.44",
@@ -20,5 +16,23 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "palette": [
+        "#000000",
+        "#ffffff",
+        "#ff2929",
+        "#ffc2c2",
+        "#ffa866",
+        "#fff461",
+        "#a6edde",
+        "#a6fa82",
+        "#3b68ff",
+        "#57b1e6",
+        "#1b6e9e",
+        "#c9b2b1",
+        "#c9c8b1",
+        "#b7c9b1",
+        "#b1c7c9",
+        "#000000"
+    ]
 }

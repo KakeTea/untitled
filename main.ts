@@ -185,4 +185,3 @@ down.setPosition(128, 90)
 game.onUpdateInterval(5000, function () {
 	
 })
-
