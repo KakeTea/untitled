@@ -318,6 +318,30 @@ sprites.onOverlap(SpriteKind.right, SpriteKind.bye, function (sprite, otherSprit
     info.changeLifeBy(-1)
     right12.destroy()
 })
+function Music () {
+    music.setTempo(150)
+    music.playTone(349, music.beat(BeatFraction.Double))
+    music.playTone(392, music.beat(BeatFraction.Double))
+    music.playTone(440, music.beat(BeatFraction.Double))
+    pause(100)
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(698, music.beat(BeatFraction.Half))
+    pause(100)
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Whole))
+    music.playTone(440, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    pause(100)
+}
 function Right_Arrows () {
     pause(500)
     right12.setVelocity(0, 150)
@@ -616,6 +640,9 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function Left_Arrows () {
     left1.setVelocity(0, 150)
+}
+function Music_1 () {
+	
 }
 sprites.onOverlap(SpriteKind.Down, SpriteKind.bye, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
@@ -919,8 +946,9 @@ left1.setPosition(32, -15)
 up1.setPosition(64, -15)
 right12.setPosition(96, -15)
 down1.setPosition(128, -15)
-pause(1000)
+pause(2000)
 Left_Arrows()
 Up_Arrows()
 Right_Arrows()
 Down_Arrows()
+Music()
